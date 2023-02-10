@@ -29,7 +29,7 @@ header {
     position: relative;
     color: var(--black);
     background-color: var(--secondary-color);
-    z-index: 1;
+    z-index: 1000;
 }
 
 header ul li {
