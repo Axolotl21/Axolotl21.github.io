@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Brayen Bakara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+    <script defer src="/scripts/script.js"></script>
+    <script defer src="/scripts/calculator.js"></script>
+    <script defer src="/scripts/tic-tac-toe.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="button-menu"><i class="fa-brands fa-windows"></i></li>
+                <li><a class="tooltip" href="https://linkedin.com/in/brayen-bakara-896373157/" target="_blank"><i class="fa-brands fa-linkedin"><span class="tooltiptext">Linkedin</span></i></a></li>
+                <li><a class="tooltip" href="https://github.com/Axolotl21" target="_blank"><i class="fa-brands fa-github"><span class="tooltiptext">GitHub</span></i></a></li>
+                <li class="tooltip" id="email-button"><i class="fa-solid fa-envelope"><span class="tooltiptext">Email</span></i></li>
+                <li><a class="tooltip" href="https://instagram.com/bryend312" target="_blank"><i class="fa-brands fa-square-instagram"><span class="tooltiptext">Instagram</span></i></a></li>
+                <li><span id="date"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu">
+        <ul>
+            <li id="calculator-button"><i class="fa-solid fa-calculator"></i>Calculator</li>
+            <li id="game-button"><i class="fa-solid fa-chess-board"></i>Tic Tac Toe</li>
+            <li id="music-button"><i class="fa-solid fa-music"></i>Music Player</li>
+        </ul>
+    </div>
+    <div class="lamp-container">
+        <img src="assets/images/lamp.png" alt="lamp" class="lamp">
+        <img src="assets/images/light.png" alt="light" class="light">
+    </div>
+    <div class="icons" id="about-me">
+        <div>
+            <figure><i class="fa-solid fa-file"></i></figure>
+            <figcaption>About Me</figcaption>
+        </div>
+    </div>
+    <div class="icons" id="project">
+        <div>
+            <figure><i class="fa-solid fa-folder"></i></figure>
+            <figcaption>My Project</figcaption>
+        </div>
+    </div>
+    <div class="file-explorer" id="about-me-explorer">
+        <div class="navbar-icon">
+            <div class="three-ball">
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+            </div>
+            <span>About Me</span>
+            <p class="exit"><i class="fa-solid fa-xmark"></i></p>
+        </div>
+        <div id="content">
+            <img src="assets/images/profil-images.jpg" alt="My-profile-image">
+            <p>Hola! My name's Brayen Bakara, graduated from <span>AMIKOM Yogyakarta University</span> with a computer degree. 
+            Currently learning Front-end development and UI Design. You can download my cv <a href="assets/CV/CV.pdf" download>here</a></p>
+        </div>
+    </div>
+    <div class="file-explorer" id="project-explorer">
+        <div class="navbar-icon">
+            <div class="three-ball">
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+            </div>
+            <span>My Project</span>
+            <p class="exit"><i class="fa-solid fa-xmark"></i></p>
+        </div>
+        <div class="inside-folder">
+            <div>
+                <p>Website</p>
+                <div class="in-folder">
+                    <div id="HPI-Agro">
+                        <figure><i class="fa-solid fa-folder"></i></figure>
+                        <figcaption>HPI-Agro</figcaption>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>UI Design</p>
+            </div>
+        </div>
+    </div>
+    <div class="file-explorer" id="email-form">
+        <div class="navbar-icon">
+            <div class="three-ball">
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+            </div>
+            <span>Contact Me</span>
+            <p class="exit"><i class="fa-solid fa-xmark"></i></p>
+        </div>
+        <div>
+            <form action="" method="post">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="emails">Email</label>
+                <input type="email" id="emails" name="emails">
+                <label for="message">Your Message</label>
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="file-explorer" id="calculator">
+        <div class="navbar-icon">
+            <div class="three-ball">
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+            </div>
+            <span>Calculator</span>
+            <p class="exit"><i class="fa-solid fa-xmark"></i></p>
+        </div>
+        <div class="screen">
+            <p class="display">0</p>
+            <p class="subdisplay"></p>
+          </div>
+        <div>
+            <div class="flex">
+                <div class="key" id="double">AC</div>
+                <div class="key" id="double">CE</div>
+            </div>
+            <div class="flex">
+                <div class="key">7</div>
+                <div class="key">8</div>
+                <div class="key">9</div>
+                <div class="key">/</div>
+            </div>
+            <div class="flex">
+                <div class="key">4</div>
+                <div class="key">5</div>
+                <div class="key">6</div>
+                <div class="key">x</div>
+            </div>
+            <div class="flex">
+                <div class="key">1</div>
+                <div class="key">2</div>
+                <div class="key">3</div>
+                <div class="key">-</div>
+            </div>
+            <div class="flex">
+                <div class="key">0</div>
+                <div class="key">.</div>
+                <div class="key">=</div>
+                <div class="key">+</div>
+            </div>
+        </div>
+    </div>
+    <div class="file-explorer" id="game">
+        <div class="navbar-icon">
+            <div class="three-ball">
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+                <div class="navbar-icon-ball"></div>
+            </div>
+            <span>Tic Tac Toe</span>
+            <p class="exit"><i class="fa-solid fa-xmark"></i></p>
+        </div>
+        <h2 class="game-status"></h2>
+        <div id="container">
+            <div class="game-container">
+                <div data-cell-index="0" class="cell"></div>
+                <div data-cell-index="1" class="cell"></div>
+                <div data-cell-index="2" class="cell"></div>
+                <div data-cell-index="3" class="cell"></div>
+                <div data-cell-index="4" class="cell"></div>
+                <div data-cell-index="5" class="cell"></div>
+                <div data-cell-index="6" class="cell"></div>
+                <div data-cell-index="7" class="cell"></div>
+                <div data-cell-index="8" class="cell"></div>
+            </div>
+        </div>
+        <button class="game-restart">RESET</button>
+    </div>
+</body>
+</html>
