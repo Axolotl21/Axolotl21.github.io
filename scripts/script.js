@@ -68,6 +68,12 @@ $(document).ready(function() {
     $(".exit").click(function() {
         $(this).parents("#game").fadeOut("fast");
     });
+    $("#music-button").click(function() {
+        $("#music").fadeIn("fast");
+    });
+    $(".exit").click(function() {
+        $(this).parents("#music").fadeOut("fast");
+    });
     $(".navbar-icon").mousedown(function() {
         $(this).parent().draggable();
     });

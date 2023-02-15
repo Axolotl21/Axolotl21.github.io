@@ -1,4 +1,5 @@
 const statusDisplay = document.querySelector('.game-status');
+const audio = new Audio("assets/sounds/click-sound.wav");
 
 let gameActive = true;
 let currentPlayer = "X";
@@ -73,6 +74,7 @@ function handleCellClick(clickedCellEvent) {
 
     handleCellPlayed(clickedCell, clickedCellIndex);
     handleResultValidation();
+    soundControl();
 }
 
 function handleRestartGame() {
@@ -81,8 +83,14 @@ function handleRestartGame() {
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+    soundControl();
 }
 
+function soundControl() {
+    audio.pause();
+    audio.currentTime = 0;
+    audio.play();
+}
 
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.querySelector('.game-restart').addEventListener('click', handleRestartGame);
