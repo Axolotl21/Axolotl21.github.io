@@ -387,7 +387,8 @@ p:is(.display,.subdisplay) {
 
 .game-container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, minmax(50px, 100px));
+    grid-template-rows: repeat(3, minmax(50px, 100px));
     gap: 15px;
     width: auto;
     color: white;
@@ -395,8 +396,6 @@ p:is(.display,.subdisplay) {
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
     display: inline-block;
     cursor: pointer;
     line-height: 100px;

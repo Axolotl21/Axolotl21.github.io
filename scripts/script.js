@@ -28,6 +28,7 @@ setInterval(showTime, 1000);
 
 //JQuery animation
 $(document).ready(function() {
+    let boxes = $(".file-explorer");
     $("#button-menu").click(function() {
         $("#menu").slideToggle("fast");
     });
@@ -77,18 +78,9 @@ $(document).ready(function() {
     $(".navbar-icon").mousedown(function() {
         $(this).parent().draggable();
     });
-});
-
-//Increase z-index of the clicked div
-$(function() {
-    // Change this selector to find whatever your 'boxes' are
-    let boxes = $(".file-explorer");
-
-    // Set up click handlers for each box
     boxes.click(function() {
         var el = $(this), // The box that was clicked
             max = 0;
-
         // Find the highest z-index
         boxes.each(function() {
             // Find the current z-index value
@@ -96,7 +88,6 @@ $(function() {
             // Keep either the current max, or the current z-index, whichever is higher
             max = Math.max( max, z );
         });
-
         // Set the box that was clicked to the highest z-index plus one
         el.css("z-index", max + 1 );
     });
