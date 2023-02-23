@@ -51,6 +51,14 @@ $(document).ready(function() {
         $("#project").removeClass("background-transparent");
         $(this).parents("#project-explorer").fadeOut("fast");
     });
+    $("#my-certificate").click(function() {
+        $(this).addClass("background-transparent");
+        $("#certificate").fadeIn("fast");
+    });
+    $(".exit").click(function() {
+        $("#my-certificate").removeClass("background-transparent");
+        $(this).parents("#certificate").fadeOut("fast");
+    });
     $("#email-button").click(function() {
         $("#email-form").fadeIn("fast");
     });

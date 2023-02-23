@@ -305,10 +305,11 @@ header ul li a {
 .in-folder {
     display: inline-block;
     padding: 5px;
-    margin-left: 12px;
     cursor: pointer;
     text-decoration: none;
     width: 120px;
+    text-align: center;
+    margin: 7px 12px;
 }
 
 .in-folder :is(figure, figcaption) {
@@ -488,6 +489,17 @@ p:is(.display,.subdisplay) {
     border-radius: 2px;
 }
 
+.folder-order {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-certificate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 @media screen and (max-width: 1024px) {
     #content {
         flex-direction: column;
@@ -538,4 +550,21 @@ p:is(.display,.subdisplay) {
         right: 0;
         z-index: 1000;
     }
+
+    .lamp {
+        width: 120px;
+        top: -20px;
+    }
+
+    .light {
+        width: 425px;
+        margin-top: -30px;
+        margin-right: 10px;
+    }
+
+    #content p {
+        font-size: .9rem;
+    }
+
+
 }
