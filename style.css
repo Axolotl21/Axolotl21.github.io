@@ -307,7 +307,7 @@ header ul li a {
     padding: 5px;
     cursor: pointer;
     text-decoration: none;
-    width: 120px;
+    width: 100px;
     text-align: center;
     margin: 7px 12px;
 }
@@ -322,6 +322,13 @@ header ul li a {
 
 .in-folder figcaption {
     background-color: transparent;
+}
+
+.in-folder div figcaption{
+    height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 form {
