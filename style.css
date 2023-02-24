@@ -573,5 +573,8 @@ p:is(.display,.subdisplay) {
         font-size: .9rem;
     }
 
+    .flex-certificate {
+        justify-content: space-between;
+    }
 
 }
